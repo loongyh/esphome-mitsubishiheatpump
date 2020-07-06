@@ -67,11 +67,11 @@ climate::ClimateTraits MitsubishiHeatPump::traits() {
     auto traits = climate::ClimateTraits();
     traits.set_supports_action(true);
     traits.set_supports_current_temperature(true);
-    traits.set_supports_auto_mode(true);
+    traits.set_supports_auto_mode(false);
     traits.set_supports_cool_mode(true);
-    traits.set_supports_heat_mode(true);
+    traits.set_supports_heat_mode(false);
     traits.set_supports_dry_mode(true);
-    traits.set_supports_fan_only_mode(true);
+    traits.set_supports_fan_only_mode(false);
     traits.set_supports_two_point_target_temperature(false);
     traits.set_supports_away(false);
     traits.set_visual_min_temperature(ESPMHP_MIN_TEMPERATURE);
